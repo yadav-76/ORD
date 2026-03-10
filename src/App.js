@@ -916,7 +916,7 @@ const AAA_STEPS = [
     icon: "🌱",
     color: "#3a9a5c",
     title: "Regenerative Support",
-    body: "Soil health & water coaching — farms become net-positive.",
+    body: "Soil health & water coaching — farms become net-positive.Planting millions of trees to create microclimates to protect coffee bushes from natural climate changes",
     tag: "Technical Support",
   },
 ];
@@ -925,7 +925,7 @@ const AAA_IMPACT = [
   { value: "150,000+", label: "Farmers Enrolled", icon: "👩‍🌾", color: NESTLE_GOLD },
   { value: "94%",      label: "Coffee via Program", icon: "☕", color: NESTLE_TEAL },
   { value: "30–40%",   label: "Income Premium", icon: "📈", color: "#3a9a5c" },
-  { value: "Net Zero", label: "Nespresso by 2022", icon: "🌍", color: "#c9843a" },
+  
 ];
 
 function Slide5({ active }) {
@@ -1179,8 +1179,8 @@ const MARICO_PILLARS = [
     id:"supply", icon:"🌱", label:"04", title:"Supply Chain Sustainability",
     color:"#27ae60", accent:"#58d68d", bg:"rgba(39,174,96,0.09)", border:"rgba(39,174,96,0.22)",
     points:[
-      { tag:"Sustainability 2.0", body:"Circular economy across all Tier-1 suppliers." },
-      { tag:"Water Stewardship", body:"Zero liquid discharge · 40% water intensity cut by 2025." },
+      { tag:"Sustainability 2.0", body:"Circular economy across all Tier-1 suppliers.It is focused on Water Stewardship " },
+      { tag:"Water Stewardship", body:"It has created water savings potential of 3.73 billion litres·" },
     ],
   },
 ];
@@ -1661,7 +1661,7 @@ const RKT_PILLARS = [
     id:"supply", icon:"🌱", label:"04", title:"Supply Chain Sustainability",
     color:"#1a7a4a", accent:"#4caf82", bg:"rgba(26,122,74,0.1)", border:"rgba(76,175,130,0.2)",
     items:[
-      { tag:"Sustainable Sourcing", body:"100% responsible sourcing of palm oil & packaging by 2025." },
+      { tag:"Sustainable Sourcing", body:"50% net revenue from more sustainable products by 2030." },
       { tag:"Net Zero 2040", body:"Scope 1-2-3 targets · USD 1B+ climate commitment." },
     ],
   },
