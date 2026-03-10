@@ -176,7 +176,7 @@ function FooterRule({ visible }) {
 const MEMBERS = [
   { id:"25183", name:"Akhil P Chandrasekhar", role:"Strategic Lead" },
   { id:"25191", name:"Arvind Kumar Mishra",   role:"Research Analyst" },
-  { id:"25198", name:"Likhith Yadav S",        role:"Data Strategist" },
+  { id:"25198", name:"Likith Yadav S",        role:"Data Strategist" },
   { id:"25200", name:"Gokul K",                role:"Operations Analyst" },
   { id:"25204", name:"Kiran N M",              role:"Market Analyst" },
   { id:"25219", name:"S D Yashika",            role:"Sustainability Lead" },
@@ -228,7 +228,7 @@ function Slide1({ active }) {
 
         {/* Subtitle */}
         <div style={{ opacity:phase>=3?1:0, transform:phase>=3?"translateY(0)":"translateY(20px)", transition:"all 0.7s ease 0.1s", marginBottom:32 }}>
-          <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:17, lineHeight:1.7, color:"#6b6055", maxWidth:460, fontWeight:300 }}>
+          <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:18.5, lineHeight:1.7, color:"#6b6055", maxWidth:460, fontWeight:300 }}>
             Exhaustive Comparative Analysis of Management Frameworks at{" "}
             <strong style={{ color:"#3a3330", fontWeight:700 }}>Dabur, Marico, Reckitt &amp; Nestlé</strong>
           </p>
@@ -251,9 +251,9 @@ function Slide1({ active }) {
               transition:`all 0.55s cubic-bezier(.23,1,.32,1) ${0.15+i*0.07}s`,
             }}>
               <div style={{ flex:1, minWidth:0 }}>
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:17, fontWeight:700, color:"#1a1a1a", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{m.name}</div>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:18.5, fontWeight:700, color:"#1a1a1a", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{m.name}</div>
               </div>
-              <div style={{ fontFamily:"'Courier New',monospace", fontSize:15, color:"#b4641e", background:"rgba(180,100,30,0.09)", border:"1px solid rgba(180,100,30,0.2)", padding:"4px 11px", borderRadius:6, flexShrink:0, fontWeight:600 }}>{m.id}</div>
+              <div style={{ fontFamily:"'Courier New',monospace", fontSize:16.5, color:"#b4641e", background:"rgba(180,100,30,0.09)", border:"1px solid rgba(180,100,30,0.2)", padding:"4px 11px", borderRadius:6, flexShrink:0, fontWeight:600 }}>{m.id}</div>
             </div>
           ))}
         </div>
@@ -261,7 +261,7 @@ function Slide1({ active }) {
         {/* Bottom rule */}
         <div style={{ marginTop:22, display:"flex", alignItems:"center", gap:12, opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.2s" }}>
           <div style={{ flex:1, height:1, background:"rgba(0,0,0,0.09)" }}/>
-          <span style={{ fontFamily:"'Courier New',monospace", fontSize:12, color:"#c0b0a4", letterSpacing:3, textTransform:"uppercase" }}>SDMIMD · Feb 2026</span>
+          <span style={{ fontFamily:"'Courier New',monospace", fontSize:13.5, color:"#c0b0a4", letterSpacing:3, textTransform:"uppercase" }}>SDMIMD · 2025-27</span>
           <div style={{ flex:1, height:1, background:"rgba(0,0,0,0.09)" }}/>
         </div>
       </div>
@@ -347,7 +347,7 @@ function Slide2({ active }) {
         {/* Company pills */}
         <div style={{ display:"flex", gap:10, paddingBottom:6 }}>
           {[{name:"Dabur",color:"#2d7d46"},{name:"Marico",color:"#0077b6"},{name:"Reckitt",color:"#c1121f"},{name:"Nestlé",color:"#1b3a4b"}].map(c=>(
-            <div key={c.name} style={{ padding:"7px 16px", background:"#fff", border:`2px solid ${c.color}44`, borderRadius:24, fontFamily:"'DM Sans',sans-serif", fontSize:17, fontWeight:700, color:c.color, boxShadow:"0 2px 10px rgba(0,0,0,0.06)" }}>{c.name}</div>
+            <div key={c.name} style={{ padding:"7px 16px", background:"#fff", border:`2px solid ${c.color}44`, borderRadius:24, fontFamily:"'DM Sans',sans-serif", fontSize:18.5, fontWeight:700, color:c.color, boxShadow:"0 2px 10px rgba(0,0,0,0.06)" }}>{c.name}</div>
           ))}
         </div>
       </div>
@@ -377,10 +377,10 @@ function Slide2({ active }) {
 
             {/* Icon + title row */}
             <div style={{ display:"flex", alignItems:"center", gap:14 }}>
-              <div style={{ width:52, height:52, borderRadius:13, flexShrink:0, background:`${q.color}18`, border:`2px solid ${q.color}33`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22, animation:hovered===q.id?"iconBounce 0.6s ease":"none" }}>{q.icon}</div>
+              <div style={{ width:52, height:52, borderRadius:13, flexShrink:0, background:`${q.color}18`, border:`2px solid ${q.color}33`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5, animation:hovered===q.id?"iconBounce 0.6s ease":"none" }}>{q.icon}</div>
               <div>
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4, textTransform:"uppercase", color:q.color, fontWeight:700, marginBottom:3 }}>{q.label} ·</div>
-                <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700, color:"#1a1a1a" }}>{q.title}</div>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4, textTransform:"uppercase", color:q.color, fontWeight:700, marginBottom:3 }}>{q.label} ·</div>
+                <div style={{ fontFamily:"'Playfair Display',serif", fontSize:23.5, fontWeight:700, color:"#1a1a1a" }}>{q.title}</div>
               </div>
             </div>
 
@@ -392,7 +392,7 @@ function Slide2({ active }) {
               {q.points.map((pt,j)=>(
                 <div key={j} style={{ display:"flex", alignItems:"flex-start", gap:12 }}>
                   <div style={{ width:7, height:7, borderRadius:"50%", background:q.color, marginTop:7, flexShrink:0, opacity:0.85 }}/>
-                  <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.55, color:"#4a3f38", fontWeight:400 }}>{pt}</span>
+                  <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.55, color:"#4a3f38", fontWeight:400 }}>{pt}</span>
                 </div>
               ))}
             </div>
@@ -495,7 +495,7 @@ function Slide3({ active }) {
           <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:46, fontWeight:900, letterSpacing:-1.5, color:"#1a1a1a", lineHeight:1.1 }}>
             The Four <ShimmerText>Titans</ShimmerText> of FMCG
           </h1>
-          <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, color:"#8a7a6e", fontWeight:300, maxWidth:320, textAlign:"right", lineHeight:1.5, paddingBottom:4 }}>
+          <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, color:"#8a7a6e", fontWeight:300, maxWidth:320, textAlign:"right", lineHeight:1.5, paddingBottom:4 }}>
             Bridging heritage &amp; future readiness across discontinuous geographies
           </p>
         </div>
@@ -545,18 +545,18 @@ function Slide3({ active }) {
                   width:52, height:52, borderRadius:14, marginBottom:12,
                   background:`${c.color}15`, border:`2px solid ${c.color}33`,
                   display:"flex", alignItems:"center", justifyContent:"center",
-                  fontSize:24,
+                  fontSize:25.5,
                   animation: isHov ? "floatCard 2s ease-in-out infinite" : "none",
                 }}>{c.icon}</div>
 
                 {/* Company name */}
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4, textTransform:"uppercase", color:c.color, fontWeight:700, marginBottom:3 }}>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4, textTransform:"uppercase", color:c.color, fontWeight:700, marginBottom:3 }}>
                   {c.keyword}
                 </div>
-                <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:900, color:"#1a1a1a", lineHeight:1, marginBottom:3, letterSpacing:-0.5 }}>
+                <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:27.5, fontWeight:900, color:"#1a1a1a", lineHeight:1, marginBottom:3, letterSpacing:-0.5 }}>
                   {c.name}
                 </h2>
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, color:c.color, fontWeight:600, marginBottom:10, letterSpacing:0.3 }}>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, color:c.color, fontWeight:600, marginBottom:10, letterSpacing:0.3 }}>
                   {c.tagline}
                 </div>
 
@@ -564,7 +564,7 @@ function Slide3({ active }) {
                 <div style={{ height:1.5, background:`linear-gradient(to right,${c.color}66,transparent)`, marginBottom:10, borderRadius:2 }}/>
 
                 {/* Description */}
-                <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.55, color:"#5a4f48", fontWeight:300, flex:1, marginBottom:12 }}>
+                <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.55, color:"#5a4f48", fontWeight:300, flex:1, marginBottom:12 }}>
                   {c.desc}
                 </p>
 
@@ -578,8 +578,8 @@ function Slide3({ active }) {
                       opacity: phase>=4 ? 1 : 0,
                       transition:`opacity 0.5s ease ${0.3+i*0.1+j*0.06}s`,
                     }}>
-                      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:17, fontWeight:900, color:c.color, lineHeight:1.1 }}>{s.val}</div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:10, color:"#9e8e82", letterSpacing:1, marginTop:2, textTransform:"uppercase" }}>{s.label}</div>
+                      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:18.5, fontWeight:900, color:c.color, lineHeight:1.1 }}>{s.val}</div>
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11.5, color:"#9e8e82", letterSpacing:1, marginTop:2, textTransform:"uppercase" }}>{s.label}</div>
                     </div>
                   ))}
                 </div>
@@ -717,7 +717,7 @@ function Slide4({ active }) {
         {/* Eyebrow */}
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:12 }}>
           <div style={{ width:3, height:28, borderRadius:2, background:`linear-gradient(to bottom,${NESTLE_GOLD},rgba(201,168,76,0.2))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:5, color:NESTLE_GOLD, textTransform:"uppercase", fontWeight:600 }}>
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:5, color:NESTLE_GOLD, textTransform:"uppercase", fontWeight:600 }}>
             Slide 04 · Nestlé · Management Frameworks
           </span>
         </div>
@@ -726,9 +726,8 @@ function Slide4({ active }) {
           <div>
             {/* Nestlé badge */}
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 16px", background:"rgba(201,168,76,0.12)", border:`1px solid ${NESTLE_GOLD}44`, borderRadius:24, marginBottom:12 }}>
-              <img src="https://www.citypng.com/photo/26935/nestle-logo-black-image-png" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, fontWeight:700, color:NESTLE_GOLD, letterSpacing:2 }}>NESTLÉ S.A.</span>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, color:"rgba(201,168,76,0.6)", letterSpacing:1 }}>The Global Standard</span>
+              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, fontWeight:700, color:NESTLE_GOLD, letterSpacing:2 }}>NESTLÉ S.A.</span>
+              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, color:"rgba(201,168,76,0.6)", letterSpacing:1 }}>The Global Standard</span>
             </div>
             <h1 style={{
               fontFamily:"'Playfair Display',serif",
@@ -748,9 +747,28 @@ function Slide4({ active }) {
           {/* 4 pillar icons summary */}
           <div style={{ display:"flex", gap:10, paddingBottom:4, opacity:phase>=2?1:0, transition:"opacity 0.6s ease 0.3s" }}>
             {NESTLE_PILLARS.map(p=>(
-              <div key={p.id} style={{ width:44, height:44, borderRadius:12, background:`${p.color}33`, border:`1.5px solid ${p.color}66`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:20 }}>{p.icon}</div>
+              <div key={p.id} style={{ width:44, height:44, borderRadius:12, background:`${p.color}33`, border:`1.5px solid ${p.color}66`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5 }}>{p.icon}</div>
             ))}
           </div>
+        </div>
+      </div>
+
+
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+      <div style={{
+        position:"absolute", top:24, right:28, zIndex:20,
+        opacity:phase>=1?1:0, transition:"opacity 0.8s ease 0.2s",
+      }}>
+        <div style={{
+          background:"rgba(255,255,255,0.94)",
+          borderRadius:12, padding:"8px 18px",
+          boxShadow:`0 4px 24px ${NESTLE_GOLD}33, 0 1px 6px rgba(0,0,0,0.18)`,
+          border:`1.5px solid ${NESTLE_GOLD}44`,
+          display:"flex", alignItems:"center", justifyContent:"center",
+          minWidth:160, height:68,
+        }}>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJP3CUB-TxSeysL1z-Ux5t5GZSnQSj1QRFmA&s" alt="logo"
+            style={{ width:160, height:68, objectFit:"contain" }}/>
         </div>
       </div>
 
@@ -802,17 +820,17 @@ function Slide4({ active }) {
                   width:56, height:56, borderRadius:14, marginBottom:14,
                   background:`${p.color}44`, border:`1.5px solid ${p.accent}55`,
                   display:"flex", alignItems:"center", justifyContent:"center",
-                  fontSize:22,
+                  fontSize:23.5,
                   animation: isHov ? "floatCard 2.2s ease-in-out infinite" : "none",
                   boxShadow: isHov ? `0 8px 24px ${p.accent}44` : "none",
                   transition:"box-shadow 0.3s ease",
                 }}>{p.icon}</div>
 
                 {/* Pillar number + label */}
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4, textTransform:"uppercase", color:p.accent, fontWeight:700, marginBottom:4 }}>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4, textTransform:"uppercase", color:p.accent, fontWeight:700, marginBottom:4 }}>
                   {String(i+1).padStart(2,"0")} ·
                 </div>
-                <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700, color:"#fff", lineHeight:1.2, marginBottom:14, letterSpacing:-0.3 }}>
+                <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:19.5, fontWeight:700, color:"#fff", lineHeight:1.2, marginBottom:14, letterSpacing:-0.3 }}>
                   {p.label}
                 </h3>
 
@@ -831,8 +849,8 @@ function Slide4({ active }) {
                       transform:phase>=4?"translateY(0)":"translateY(12px)",
                       transition:`all 0.5s ease ${0.3+i*0.1+j*0.1}s`,
                     }}>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700, color:p.accent, marginBottom:5, lineHeight:1.2 }}>{pt.heading}</div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.55, color:"rgba(255,255,255,0.6)", fontWeight:300 }}>{pt.body}</div>
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700, color:p.accent, marginBottom:5, lineHeight:1.2 }}>{pt.heading}</div>
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.55, color:"rgba(255,255,255,0.6)", fontWeight:300 }}>{pt.body}</div>
                     </div>
                   ))}
                 </div>
@@ -854,7 +872,7 @@ function Slide4({ active }) {
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s",
       }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.08)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:11, color:"rgba(201,168,76,0.5)", letterSpacing:3, textTransform:"uppercase" }}>
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12.5, color:"rgba(201,168,76,0.5)", letterSpacing:3, textTransform:"uppercase" }}>
           Nestlé S.A. · Strategic Convergence · Global FMCG Sector
         </span>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.08)" }}/>
@@ -942,6 +960,10 @@ function Slide5({ active }) {
       {/* Dot grid texture */}
       <div style={{ position:"absolute", inset:0, pointerEvents:"none", zIndex:0, backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px)", backgroundSize:"36px 36px" }}/>
 
+      
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+     
+
       {/* Gold top stripe */}
       <div style={{ position:"absolute", top:0, left:0, right:0, height:4, zIndex:10, background:`linear-gradient(to right,${NESTLE_TEAL},${NESTLE_GOLD},#3a9a5c,${NESTLE_GOLD})`, backgroundSize:"400% auto", animation:"shimmer 5s linear infinite", opacity:phase>=1?1:0, transition:"opacity 0.8s ease" }}/>
 
@@ -954,7 +976,7 @@ function Slide5({ active }) {
         {/* Eyebrow */}
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:12 }}>
           <div style={{ width:3, height:28, borderRadius:2, background:`linear-gradient(to bottom,${NESTLE_GOLD},rgba(201,168,76,0.15))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, letterSpacing:5, color:NESTLE_GOLD, textTransform:"uppercase", fontWeight:600 }}>
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, letterSpacing:5, color:NESTLE_GOLD, textTransform:"uppercase", fontWeight:600 }}>
             Slide 05 · Nestlé · Case Study
           </span>
         </div>
@@ -963,8 +985,7 @@ function Slide5({ active }) {
           <div>
             {/* Programme badge */}
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px", background:"rgba(201,168,76,0.1)", border:`1px solid ${NESTLE_GOLD}44`, borderRadius:24, marginBottom:12 }}>
-              <img src="https://www.citypng.com/photo/26935/nestle-logo-black-image-png" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700, color:NESTLE_GOLD, letterSpacing:2 }}>NESPRESSO AAA PROGRAM</span>
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700, color:NESTLE_GOLD, letterSpacing:2 }}>NESPRESSO AAA PROGRAM</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:44, fontWeight:900, letterSpacing:-1.5, lineHeight:1.08, color:"#fff" }}>
               Sustainable{" "}
@@ -977,8 +998,8 @@ function Slide5({ active }) {
           <div style={{ display:"flex", gap:10, paddingBottom:4, opacity:phase>=2?1:0, transition:"opacity 0.6s ease 0.3s" }}>
             {AAA_IMPACT.slice(0,2).map((stat,i) => (
               <div key={i} style={{ padding:"8px 18px", background:"rgba(255,255,255,0.05)", border:`1px solid ${stat.color}44`, borderRadius:14, textAlign:"center" }}>
-                <div style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:900, color:stat.color }}>{stat.value}</div>
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, color:"rgba(255,255,255,0.45)", letterSpacing:1, textTransform:"uppercase", marginTop:2 }}>{stat.label}</div>
+                <div style={{ fontFamily:"'Playfair Display',serif", fontSize:27.5, fontWeight:900, color:stat.color }}>{stat.value}</div>
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, color:"rgba(255,255,255,0.45)", letterSpacing:1, textTransform:"uppercase", marginTop:2 }}>{stat.label}</div>
               </div>
             ))}
           </div>
@@ -995,7 +1016,7 @@ function Slide5({ active }) {
 
         {/* LEFT — Journey cards (vertical flow) */}
         <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4, textTransform:"uppercase", color:"rgba(255,255,255,0.35)", marginBottom:2, opacity:phase>=2?1:0, transition:"opacity 0.5s ease" }}>
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4, textTransform:"uppercase", color:"rgba(255,255,255,0.35)", marginBottom:2, opacity:phase>=2?1:0, transition:"opacity 0.5s ease" }}>
             Programme Journey
           </div>
 
@@ -1020,16 +1041,16 @@ function Slide5({ active }) {
                 }}
               >
                 {/* Step icon */}
-                <div style={{ width:50, height:50, borderRadius:13, flexShrink:0, background:`${s.color}22`, border:`1.5px solid ${s.color}55`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:24, animation: isHov ? "floatCard 2s ease-in-out infinite":"none" }}>{s.icon}</div>
+                <div style={{ width:50, height:50, borderRadius:13, flexShrink:0, background:`${s.color}22`, border:`1.5px solid ${s.color}55`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:25.5, animation: isHov ? "floatCard 2s ease-in-out infinite":"none" }}>{s.icon}</div>
 
                 <div style={{ flex:1 }}>
                   {/* Phase + tag */}
                   <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:6 }}>
-                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:3, textTransform:"uppercase", color:s.color, fontWeight:700 }}>{s.phase}</span>
-                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, color:"rgba(255,255,255,0.3)", background:"rgba(255,255,255,0.06)", padding:"2px 8px", borderRadius:20, letterSpacing:1 }}>{s.tag}</span>
+                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:3, textTransform:"uppercase", color:s.color, fontWeight:700 }}>{s.phase}</span>
+                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, color:"rgba(255,255,255,0.3)", background:"rgba(255,255,255,0.06)", padding:"2px 8px", borderRadius:20, letterSpacing:1 }}>{s.tag}</span>
                   </div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontWeight:700, color:"#fff", marginBottom:6, lineHeight:1.2 }}>{s.title}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.6, color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{s.body}</div>
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21.5, fontWeight:700, color:"#fff", marginBottom:6, lineHeight:1.2 }}>{s.title}</div>
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.6, color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{s.body}</div>
                 </div>
 
                 {/* Hover right accent */}
@@ -1041,7 +1062,7 @@ function Slide5({ active }) {
 
         {/* RIGHT — Impact dashboard */}
         <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4, textTransform:"uppercase", color:"rgba(255,255,255,0.35)", marginBottom:2, opacity:phase>=2?1:0, transition:"opacity 0.5s ease 0.1s" }}>
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4, textTransform:"uppercase", color:"rgba(255,255,255,0.35)", marginBottom:2, opacity:phase>=2?1:0, transition:"opacity 0.5s ease 0.1s" }}>
             Measurable Impact
           </div>
 
@@ -1066,9 +1087,9 @@ function Slide5({ active }) {
                     animation: isH ? "floatCard 2.4s ease-in-out infinite" : "none",
                   }}
                 >
-                  <div style={{ fontSize:26, marginBottom:6 }}>{stat.icon}</div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:900, color:stat.color, lineHeight:1, marginBottom:6 }}>{stat.value}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, color:"rgba(255,255,255,0.45)", letterSpacing:2, textTransform:"uppercase", lineHeight:1.4 }}>{stat.label}</div>
+                  <div style={{ fontSize:27.5, marginBottom:6 }}>{stat.icon}</div>
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:27.5, fontWeight:900, color:stat.color, lineHeight:1, marginBottom:6 }}>{stat.value}</div>
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, color:"rgba(255,255,255,0.45)", letterSpacing:2, textTransform:"uppercase", lineHeight:1.4 }}>{stat.label}</div>
 
                   {/* Glowing bottom line */}
                   <div style={{ marginTop:12, height:2, borderRadius:2, background:`linear-gradient(to right,transparent,${stat.color},transparent)`, opacity:isH?1:0.3, transition:"opacity 0.3s ease" }}/>
@@ -1088,11 +1109,11 @@ function Slide5({ active }) {
             transform:phase>=5?"translateY(0)":"translateY(18px)",
             transition:"all 0.7s cubic-bezier(.23,1,.32,1) 0.2s",
           }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:26, color:NESTLE_GOLD, opacity:0.4, lineHeight:1, marginBottom:6 }}>"</div>
-            <p style={{ fontFamily:"'Playfair Display',serif", fontSize:17, fontStyle:"italic", color:"rgba(255,255,255,0.75)", lineHeight:1.7, marginBottom:10 }}>
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:27.5, color:NESTLE_GOLD, opacity:0.4, lineHeight:1, marginBottom:6 }}>"</div>
+            <p style={{ fontFamily:"'Playfair Display',serif", fontSize:18.5, fontStyle:"italic", color:"rgba(255,255,255,0.75)", lineHeight:1.7, marginBottom:10 }}>
               The AAA Program demonstrates that when you invest in farmers, you invest in the future of coffee — and in the business itself.
             </p>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, color:NESTLE_GOLD, letterSpacing:2, textTransform:"uppercase", fontWeight:600 }}>
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, color:NESTLE_GOLD, letterSpacing:2, textTransform:"uppercase", fontWeight:600 }}>
               Nespresso Sustainability Report
             </div>
           </div>
@@ -1102,7 +1123,7 @@ function Slide5({ active }) {
       {/* Footer */}
       <div style={{ padding:"12px 72px 16px", display:"flex", alignItems:"center", gap:12, zIndex:2, opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12, color:"rgba(201,168,76,0.45)", letterSpacing:3, textTransform:"uppercase" }}>
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:13.5, color:"rgba(201,168,76,0.45)", letterSpacing:3, textTransform:"uppercase" }}>
           Nestlé S.A. · Nespresso AAA · Strategic Convergence
         </span>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
@@ -1188,19 +1209,37 @@ function Slide6({ active }) {
       position:"relative", overflow:"hidden",
     }}>
       {/* Orbs */}
-      <Orb style={{ width:700, height:700, background:"rgba(208,2,27,0.08)",  top:-260, left:-200, animation:"rotateSlow 52s linear infinite" }}/>
-      <Orb style={{ width:500, height:500, background:"rgba(155,89,182,0.07)",bottom:-180, right:-180, animation:"rotateSlowR 38s linear infinite" }}/>
-      <Orb style={{ width:300, height:300, background:"rgba(39,174,96,0.05)", top:"45%", left:"40%" }}/>
+<Orb style={{ width:700, height:700, background:"rgba(208,2,27,0.08)", top:-260, left:-200, animation:"rotateSlow 52s linear infinite" }}/>
+<Orb style={{ width:500, height:500, background:"rgba(155,89,182,0.07)", bottom:-180, right:-180, animation:"rotateSlowR 38s linear infinite" }}/>
+<Orb style={{ width:300, height:300, background:"rgba(39,174,96,0.05)", top:"45%", left:"40%" }}/>
 
-      {/* Grid texture */}
-      <div style={{ position:"absolute", inset:0, pointerEvents:"none", zIndex:0, backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)", backgroundSize:"38px 38px" }}/>
+{/* Grid texture */}
+<div style={{ position:"absolute", inset:0, pointerEvents:"none", zIndex:0, backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)", backgroundSize:"38px 38px" }}/>
 
-      {/* Marico red top stripe */}
-      <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
-        background:`linear-gradient(to right,${MARICO_RED},#ff6b6b,#e05c00,${MARICO_RED})`,
-        backgroundSize:"400% auto", animation:"shimmer 4s linear infinite",
-        opacity:phase>=1?1:0, transition:"opacity 0.8s ease" }}/>
+{/* Marico red top stripe - FIXED CLOSING TAGS HERE */}
+<div style={{ 
+  position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
+  background:`linear-gradient(to right,${MARICO_RED},#ff6b6b,#e05c00,${MARICO_RED})`,
+  backgroundSize:"400% auto", animation:"shimmer 4s linear infinite",
+  opacity:phase>=1?1:0, transition:"opacity 0.8s ease" 
+}}/>
 
+{/* ── TOP-RIGHT COMPANY LOGO ── */}
+<div style={{
+  position:"absolute", top:22, right:26, zIndex:20,
+  opacity:phase>=1?1:0, transition:"opacity 0.8s ease 0.2s",
+}}>
+  <div style={{
+    background:"rgba(255,255,255,0.95)", borderRadius:12,
+    padding:"10px 24px", height:70,
+    display:"flex", alignItems:"center", justifyContent:"center",
+    boxShadow:`0 4px 24px ${MARICO_RED}44, 0 1px 8px rgba(0,0,0,0.2)`,
+    border:`1.5px solid ${MARICO_RED}55`, minWidth:160,
+  }}>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcORqLcrh_3ZRjtYRiG6kWWqJp-pByc1o_mQ&s" alt="logo"
+      style={{ width:160, height:70, objectFit:"contain" }}/>
+  </div>
+</div>
       {/* ── HEADER ── */}
       <div style={{ padding:"30px 72px 0", position:"relative", zIndex:2,
         opacity:phase>=1?1:0, transform:phase>=1?"translateY(0)":"translateY(-24px)",
@@ -1208,7 +1247,7 @@ function Slide6({ active }) {
 
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:12 }}>
           <div style={{ width:3, height:28, borderRadius:2, background:`linear-gradient(to bottom,${MARICO_RED},rgba(208,2,27,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:5, color:MARICO_ROSE, textTransform:"uppercase", fontWeight:600 }}>
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:5, color:MARICO_ROSE, textTransform:"uppercase", fontWeight:600 }}>
             Slide 06 · Marico · Management Frameworks
           </span>
         </div>
@@ -1218,9 +1257,8 @@ function Slide6({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(208,2,27,0.12)", border:`1px solid ${MARICO_RED}44`,
               borderRadius:24, marginBottom:12 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcORqLcrh_3ZRjtYRiG6kWWqJp-pByc1o_mQ&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, fontWeight:700, color:MARICO_ROSE, letterSpacing:2 }}>MARICO LIMITED</span>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, color:"rgba(255,107,107,0.55)", letterSpacing:1 }}>The Agile Challenger</span>
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, fontWeight:700, color:MARICO_ROSE, letterSpacing:2 }}>MARICO LIMITED</span>
+              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, color:"rgba(255,107,107,0.55)", letterSpacing:1 }}>The Agile Challenger</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:46, fontWeight:900, letterSpacing:-1.5, lineHeight:1.08, color:"#fff" }}>
               Management{" "}
@@ -1233,7 +1271,7 @@ function Slide6({ active }) {
             {MARICO_PILLARS.map(p => (
               <div key={p.id} style={{ width:44, height:44, borderRadius:12,
                 background:`${p.color}33`, border:`1.5px solid ${p.color}66`,
-                display:"flex", alignItems:"center", justifyContent:"center", fontSize:20 }}>{p.icon}</div>
+                display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5 }}>{p.icon}</div>
             ))}
           </div>
         </div>
@@ -1285,14 +1323,14 @@ function Slide6({ active }) {
                 {/* Icon */}
                 <div style={{ width:58, height:58, borderRadius:15, marginBottom:16,
                   background:`${p.color}22`, border:`2px solid ${p.accent}44`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                   animation: isHov ? "floatCard 2.1s ease-in-out infinite" : "none",
                   boxShadow: isHov ? `0 8px 28px ${p.accent}33` : "none",
                   transition:"box-shadow 0.3s ease" }}>{p.icon}</div>
 
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4,
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4,
                   textTransform:"uppercase", color:p.accent, fontWeight:700, marginBottom:5 }}>{p.label} ·</div>
-                <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
+                <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:19.5, fontWeight:700,
                   color:"#fff", lineHeight:1.2, marginBottom:14, letterSpacing:-0.3 }}>{p.title}</h3>
 
                 <div style={{ height:1, background:`linear-gradient(to right,${p.accent}55,transparent)`,
@@ -1306,9 +1344,9 @@ function Slide6({ active }) {
                       opacity:phase>=4?1:0,
                       transform:phase>=4?"translateY(0)":"translateY(14px)",
                       transition:`all 0.5s ease ${0.3+i*0.1+j*0.1}s` }}>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                         color:p.accent, marginBottom:5 }}>{pt.tag}</div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.55,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.55,
                         color:"rgba(255,255,255,0.58)", fontWeight:300 }}>{pt.body}</div>
                     </div>
                   ))}
@@ -1329,7 +1367,7 @@ function Slide6({ active }) {
       <div style={{ padding:"0 72px 18px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:11, color:`rgba(208,2,27,0.5))`,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12.5, color:`rgba(208,2,27,0.5))`,
           letterSpacing:3, textTransform:"uppercase" }}>Marico Limited · Strategic Convergence · Global FMCG</span>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
       </div>
@@ -1401,6 +1439,10 @@ function Slide7({ active }) {
         backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)",
         backgroundSize:"36px 36px" }}/>
 
+      
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+     
+
       {/* Red shimmer stripe */}
       <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
         background:`linear-gradient(to right,${MARICO_RED},${MARICO_ROSE},#e05c00,${MARICO_RED})`,
@@ -1414,7 +1456,7 @@ function Slide7({ active }) {
 
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:10 }}>
           <div style={{ width:3, height:28, borderRadius:2, background:`linear-gradient(to bottom,${MARICO_RED},rgba(208,2,27,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, letterSpacing:5,
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, letterSpacing:5,
             color:MARICO_ROSE, textTransform:"uppercase", fontWeight:600 }}>
             Slide 07 · Marico · Case Study
           </span>
@@ -1425,8 +1467,7 @@ function Slide7({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(208,2,27,0.12)", border:`1px solid ${MARICO_RED}44`,
               borderRadius:24, marginBottom:10 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcORqLcrh_3ZRjtYRiG6kWWqJp-pByc1o_mQ&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                 color:MARICO_ROSE, letterSpacing:2 }}>DIGITAL & DIVERSITY INTEGRATION</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:42, fontWeight:900,
@@ -1442,13 +1483,13 @@ function Slide7({ active }) {
           <div style={{ display:"flex", gap:10, paddingBottom:4, opacity:phase>=2?1:0, transition:"opacity 0.6s ease 0.3s" }}>
             <div style={{ padding:"8px 18px", background:"rgba(255,255,255,0.05)",
               border:`1px solid ${MARICO_RED}44`, borderRadius:14, textAlign:"center" }}>
-              <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:900, color:MARICO_RED }}>4D</div>
-              <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, color:"rgba(255,255,255,0.4)", letterSpacing:1, marginTop:2 }}>FRAMEWORK</div>
+              <div style={{ fontFamily:"'Playfair Display',serif", fontSize:29.5, fontWeight:900, color:MARICO_RED }}>4D</div>
+              <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, color:"rgba(255,255,255,0.4)", letterSpacing:1, marginTop:2 }}>FRAMEWORK</div>
             </div>
             <div style={{ padding:"8px 18px", background:"rgba(255,255,255,0.05)",
               border:`1px solid ${MARICO_ROSE}44`, borderRadius:14, textAlign:"center" }}>
-              <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:900, color:MARICO_ROSE }}>82</div>
-              <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, color:"rgba(255,255,255,0.4)", letterSpacing:1, marginTop:2 }}>INCLUSION IDX</div>
+              <div style={{ fontFamily:"'Playfair Display',serif", fontSize:29.5, fontWeight:900, color:MARICO_ROSE }}>82</div>
+              <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, color:"rgba(255,255,255,0.4)", letterSpacing:1, marginTop:2 }}>INCLUSION IDX</div>
             </div>
           </div>
         </div>
@@ -1469,7 +1510,7 @@ function Slide7({ active }) {
 
         {/* LEFT — Action cards */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease" }}>Strategic Actions Taken</div>
 
@@ -1494,16 +1535,16 @@ function Slide7({ active }) {
               >
                 <div style={{ width:44, height:44, borderRadius:12, flexShrink:0,
                   background:`${a.color}25`, border:`1.5px solid ${a.accent}55`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:24,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:25.5,
                   animation: isHov ? "floatCard 2s ease-in-out infinite" : "none" }}>{a.icon}</div>
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:2.5,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:2.5,
                     textTransform:"uppercase", color:a.accent, fontWeight:700, marginBottom:4 }}>
                     Action {String(i+1).padStart(2,"0")}
                   </div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontWeight:700,
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21.5, fontWeight:700,
                     color:"#fff", marginBottom:5, lineHeight:1.2 }}>{a.title}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.55,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.55,
                     color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{a.body}</div>
                 </div>
                 {isHov && <div style={{ width:3, borderRadius:2, alignSelf:"stretch", flexShrink:0,
@@ -1515,7 +1556,7 @@ function Slide7({ active }) {
 
         {/* RIGHT — Results */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease 0.1s" }}>Measurable Results</div>
 
@@ -1539,16 +1580,16 @@ function Slide7({ active }) {
               >
                 <div style={{ width:40, height:40, borderRadius:10, flexShrink:0,
                   background:`${r.color}22`, border:`1.5px solid ${r.color}44`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                   animation: isH ? "floatCard 2.3s ease-in-out infinite":"none" }}>{r.icon}</div>
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:900,
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:27.5, fontWeight:900,
                     color:r.color, lineHeight:1, marginBottom:3 }}>
                     {countUp ? r.value : "—"}
                   </div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, color:"rgba(255,255,255,0.5)",
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, color:"rgba(255,255,255,0.5)",
                     marginBottom:2 }}>{r.label}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, color:r.color,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, color:r.color,
                     opacity:0.6 }}>prev: {r.prev}</div>
                 </div>
                 {isH && <div style={{ width:3, height:"55%", borderRadius:2,
@@ -1563,7 +1604,7 @@ function Slide7({ active }) {
       <div style={{ padding:"10px 72px 14px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12, color:`rgba(208,2,27,0.45)`,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:13.5, color:`rgba(208,2,27,0.45)`,
           letterSpacing:3, textTransform:"uppercase" }}>Marico Limited · Digital & Diversity · Strategic Convergence</span>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
       </div>
@@ -1659,12 +1700,49 @@ function Slide8({ active }) {
         backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.028) 1px, transparent 1px)",
         backgroundSize:"40px 40px" }}/>
 
-      {/* Reckitt cobalt top stripe */}
-      <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
-        background:`linear-gradient(to right,${RKT_COBALT},${RKT_SKY},${RKT_GOLD},${RKT_SKY},${RKT_COBALT})`,
-        backgroundSize:"400% auto", animation:"shimmer 5s linear infinite",
-        opacity:phase>=1?1:0, transition:"opacity 0.8s ease" }}/>
+      {/* Reckitt cobalt top stripe - FIXED */}
+<div style={{ 
+  position:"absolute", 
+  top:0, 
+  left:0, 
+  right:0, 
+  height:5, 
+  zIndex:10,
+  background:`linear-gradient(to right,${RKT_COBALT},${RKT_SKY},${RKT_GOLD},${RKT_SKY},${RKT_COBALT})`,
+  backgroundSize:"400% auto", 
+  animation:"shimmer 5s linear infinite",
+  opacity:phase>=1?1:0, 
+  transition:"opacity 0.8s ease" 
+}}/>
 
+{/* ── TOP-RIGHT COMPANY LOGO ── */}
+<div style={{
+  position:"absolute", 
+  top:22, 
+  right:26, 
+  zIndex:20,
+  opacity:phase>=1?1:0, 
+  transition:"opacity 0.8s ease 0.2s",
+}}>
+  <div style={{
+    background:"rgba(255,255,255,0.95)", 
+    borderRadius:12,
+    padding:"10px 24px", 
+    height:70,
+    display:"flex", 
+    alignItems:"center", 
+    justifyContent:"center",
+    boxShadow:`0 4px 24px ${RKT_SKY}44, 0 1px 8px rgba(0,0,0,0.2)`,
+    border:`1.5px solid ${RKT_SKY}55`, 
+    minWidth:160,
+  }}>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Reckitt_logo.svg/1280px-Reckitt_logo.svg.png" 
+      alt="logo"
+      style={{ width:160, height:70, objectFit:"contain" }}
+    />
+  </div>
+</div>
       {/* ── HEADER ── */}
       <div style={{ padding:"30px 72px 0", position:"relative", zIndex:2,
         opacity:phase>=1?1:0, transform:phase>=1?"translateY(0)":"translateY(-24px)",
@@ -1673,7 +1751,7 @@ function Slide8({ active }) {
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:12 }}>
           <div style={{ width:3, height:28, borderRadius:2,
             background:`linear-gradient(to bottom,${RKT_SKY},rgba(0,87,184,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:5,
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:5,
             color:RKT_SKY, textTransform:"uppercase", fontWeight:600 }}>
             Slide 08 · Reckitt · Management Frameworks
           </span>
@@ -1684,10 +1762,9 @@ function Slide8({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(0,87,184,0.14)", border:`1px solid ${RKT_BLUE}44`,
               borderRadius:24, marginBottom:12 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJVC7p_YaeT-MZRCT_cMaD7jubtHLeaNnjQ&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, fontWeight:700,
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, fontWeight:700,
                 color:RKT_SKY, letterSpacing:2 }}>RECKITT BENCKISER</span>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11,
+              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5,
                 color:"rgba(77,157,224,0.55)", letterSpacing:1 }}>The Purpose-Led Giant</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:46, fontWeight:900,
@@ -1705,7 +1782,7 @@ function Slide8({ active }) {
             {RKT_PILLARS.map(p => (
               <div key={p.id} style={{ width:44, height:44, borderRadius:12,
                 background:`${p.color}33`, border:`1.5px solid ${p.accent}55`,
-                display:"flex", alignItems:"center", justifyContent:"center", fontSize:20 }}>{p.icon}</div>
+                display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5 }}>{p.icon}</div>
             ))}
           </div>
         </div>
@@ -1761,14 +1838,14 @@ function Slide8({ active }) {
                 <div style={{ display:"flex", alignItems:"center", gap:12 }}>
                   <div style={{ width:50, height:50, borderRadius:13, flexShrink:0,
                     background:`${p.color}30`, border:`1.5px solid ${p.accent}44`,
-                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                     animation: isHov ? "floatCard 2s ease-in-out infinite" : "none",
                     boxShadow: isHov ? `0 6px 22px ${p.accent}33` : "none",
                     transition:"box-shadow 0.3s ease" }}>{p.icon}</div>
                   <div>
-                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4,
+                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4,
                       textTransform:"uppercase", color:p.accent, fontWeight:700, marginBottom:3 }}>{p.label} ·</div>
-                    <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
+                    <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:19.5, fontWeight:700,
                       color:"#fff", lineHeight:1.15, letterSpacing:-0.3 }}>{p.title}</h3>
                   </div>
                 </div>
@@ -1786,9 +1863,9 @@ function Slide8({ active }) {
                       transform:phase>=4?"translateY(0)":"translateY(14px)",
                       transition:`all 0.5s ease ${0.3+i*0.1+j*0.1}s`,
                     }}>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                         color:p.accent, marginBottom:5 }}>{it.tag}</div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.55,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.55,
                         color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{it.body}</div>
                     </div>
                   ))}
@@ -1810,7 +1887,7 @@ function Slide8({ active }) {
       <div style={{ padding:"0 72px 18px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:11,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12.5,
           color:`rgba(0,87,184,0.5)5)`, letterSpacing:3, textTransform:"uppercase" }}>
           Reckitt Benckiser · Strategic Convergence · Global FMCG
         </span>
@@ -1884,6 +1961,9 @@ function Slide9({ active }) {
         backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.028) 1px, transparent 1px)",
         backgroundSize:"36px 36px" }}/>
 
+      
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+
       {/* Cobalt shimmer stripe */}
       <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
         background:`linear-gradient(to right,${RKT_COBALT},${RKT_SKY},${RKT_GOLD},${RKT_SKY},${RKT_COBALT})`,
@@ -1898,7 +1978,7 @@ function Slide9({ active }) {
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:10 }}>
           <div style={{ width:3, height:28, borderRadius:2,
             background:`linear-gradient(to bottom,${RKT_SKY},rgba(0,87,184,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, letterSpacing:5,
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, letterSpacing:5,
             color:RKT_SKY, textTransform:"uppercase", fontWeight:600 }}>
             Slide 09 · Reckitt · Case Study
           </span>
@@ -1909,8 +1989,7 @@ function Slide9({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(0,87,184,0.14)", border:`1px solid ${RKT_BLUE}44`,
               borderRadius:24, marginBottom:10 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJVC7p_YaeT-MZRCT_cMaD7jubtHLeaNnjQ&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                 color:RKT_SKY, letterSpacing:2 }}>DETTOL BANEGA SWASTH INDIA</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:42, fontWeight:900,
@@ -1927,9 +2006,9 @@ function Slide9({ active }) {
             background:"rgba(255,255,255,0.05)", border:`1px solid ${RKT_SKY}33`,
             borderRadius:14, backdropFilter:"blur(8px)",
             opacity:phase>=2?1:0, transition:"opacity 0.6s ease 0.3s" }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:3,
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:3,
               textTransform:"uppercase", color:RKT_SKY, marginBottom:5, fontWeight:600 }}>Campaign Goal</div>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, color:"rgba(255,255,255,0.7)",
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, color:"rgba(255,255,255,0.7)",
               lineHeight:1.5 }}>Improve nationwide hygiene awareness through scaled community action</div>
           </div>
         </div>
@@ -1950,7 +2029,7 @@ function Slide9({ active }) {
 
         {/* LEFT — Activity cards */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease" }}>Campaign Activities</div>
 
@@ -1981,17 +2060,17 @@ function Slide9({ active }) {
                 <div style={{ width:44, height:44, borderRadius:11, flexShrink:0,
                   background:`${a.color}25`, border:`1.5px solid ${a.accent}55`,
                   display:"flex", alignItems:"center", justifyContent:"center",
-                  fontSize:24,
+                  fontSize:25.5,
                   animation: isHov ? "floatCard 2s ease-in-out infinite" : "none" }}>{a.icon}</div>
 
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:3,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:3,
                     textTransform:"uppercase", color:a.accent, fontWeight:700, marginBottom:4 }}>
                     Activity {String(i+1).padStart(2,"0")}
                   </div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontWeight:700,
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21.5, fontWeight:700,
                     color:"#fff", marginBottom:5, lineHeight:1.2 }}>{a.title}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.55,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.55,
                     color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{a.body}</div>
                 </div>
               </div>
@@ -2001,7 +2080,7 @@ function Slide9({ active }) {
 
         {/* RIGHT — Impact metrics */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease 0.1s" }}>Measured Impact</div>
 
@@ -2025,17 +2104,17 @@ function Slide9({ active }) {
               >
                 <div style={{ width:40, height:40, borderRadius:10, flexShrink:0,
                   background:`${r.color}22`, border:`1.5px solid ${r.color}44`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                   animation: isH ? "floatCard 2.4s ease-in-out infinite" : "none" }}>{r.icon}</div>
 
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:900,
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:29.5, fontWeight:900,
                     color:r.color, lineHeight:1, marginBottom:3 }}>
                     {reveal ? r.value : "—"}
                   </div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5,
                     color:"rgba(255,255,255,0.55)", marginBottom:2 }}>{r.label}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5,
                     color:r.color, opacity:0.65 }}>{r.sub}</div>
                 </div>
 
@@ -2052,7 +2131,7 @@ function Slide9({ active }) {
       <div style={{ padding:"10px 72px 14px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:13.5,
           color:`rgba(0,87,184,0.5))`, letterSpacing:3, textTransform:"uppercase" }}>
           Reckitt · Dettol Banega Swasth India · Strategic Convergence
         </span>
@@ -2152,6 +2231,24 @@ function Slide10({ active }) {
         backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px)",
         backgroundSize:"38px 38px" }}/>
 
+      
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+      <div style={{
+        position:"absolute", top:22, right:26, zIndex:20,
+        opacity:phase>=1?1:0, transition:"opacity 0.8s ease 0.2s",
+      }}>
+        <div style={{
+          background:"rgba(255,255,255,0.95)", borderRadius:12,
+          padding:"10px 24px", height:70,
+          display:"flex", alignItems:"center", justifyContent:"center",
+          boxShadow:`0 4px 24px ${DAB_GOLD}44, 0 1px 8px rgba(0,0,0,0.2)`,
+          border:`1.5px solid ${DAB_GOLD}55`, minWidth:160,
+        }}>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZvzfbc3Rj0T78YN8TrmafAOPBQYOol_bRw&s" alt="logo"
+            style={{ width:160, height:70, objectFit:"contain" }}/>
+        </div>
+      </div>
+
       {/* Dabur saffron-green shimmer stripe */}
       <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
         background:`linear-gradient(to right,${DAB_GREEN},${DAB_GOLD},${DAB_SAFFRON},${DAB_GOLD},${DAB_GREEN})`,
@@ -2166,7 +2263,7 @@ function Slide10({ active }) {
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:12 }}>
           <div style={{ width:3, height:28, borderRadius:2,
             background:`linear-gradient(to bottom,${DAB_GOLD},rgba(240,180,41,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:5,
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:5,
             color:DAB_GOLD, textTransform:"uppercase", fontWeight:600 }}>
             Slide 10 · Dabur · Management Frameworks
           </span>
@@ -2177,10 +2274,9 @@ function Slide10({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(45,138,45,0.14)", border:`1px solid ${DAB_EMERALD}44`,
               borderRadius:24, marginBottom:12 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZvzfbc3Rj0T78YN8TrmafAOPBQYOol_bRw&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, fontWeight:700,
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, fontWeight:700,
                 color:DAB_GOLD, letterSpacing:2 }}>DABUR INDIA LTD.</span>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11,
+              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5,
                 color:"rgba(240,180,41,0.55)", letterSpacing:1 }}>The Heritage Modernizer</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:46, fontWeight:900,
@@ -2201,7 +2297,7 @@ function Slide10({ active }) {
             {DAB_PILLARS.map(p => (
               <div key={p.id} style={{ width:44, height:44, borderRadius:12,
                 background:`${p.color}33`, border:`1.5px solid ${p.accent}55`,
-                display:"flex", alignItems:"center", justifyContent:"center", fontSize:20 }}>{p.icon}</div>
+                display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5 }}>{p.icon}</div>
             ))}
           </div>
         </div>
@@ -2257,15 +2353,15 @@ function Slide10({ active }) {
                 {/* Icon */}
                 <div style={{ width:56, height:56, borderRadius:14, flexShrink:0,
                   background:`${p.color}22`, border:`2px solid ${p.accent}44`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                   animation: isHov ? "floatCard 2.1s ease-in-out infinite" : "none",
                   boxShadow: isHov ? `0 8px 28px ${p.accent}33` : "none",
                   transition:"box-shadow 0.3s ease" }}>{p.icon}</div>
 
                 <div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4,
                     textTransform:"uppercase", color:p.accent, fontWeight:700, marginBottom:4 }}>{p.label} ·</div>
-                  <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
+                  <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:19.5, fontWeight:700,
                     color:"#fff", lineHeight:1.2, letterSpacing:-0.3 }}>{p.title}</h3>
                 </div>
 
@@ -2282,9 +2378,9 @@ function Slide10({ active }) {
                       transform:phase>=4?"translateY(0)":"translateY(14px)",
                       transition:`all 0.5s ease ${0.3+i*0.1+j*0.1}s`,
                     }}>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                         color:p.accent, marginBottom:4 }}>{it.tag}</div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.55,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.55,
                         color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{it.body}</div>
                     </div>
                   ))}
@@ -2305,7 +2401,7 @@ function Slide10({ active }) {
       <div style={{ padding:"0 72px 18px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:11,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12.5,
           color:`rgba(45,138,45,0.5)5)`, letterSpacing:3, textTransform:"uppercase" }}>
           Dabur India Ltd. · Strategic Convergence · Global FMCG
         </span>
@@ -2402,6 +2498,10 @@ function Slide11({ active }) {
         backgroundImage:"radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px)",
         backgroundSize:"36px 36px" }}/>
 
+      
+      {/* ── TOP-RIGHT COMPANY LOGO ── */}
+      
+
       {/* Shimmer stripe */}
       <div style={{ position:"absolute", top:0, left:0, right:0, height:5, zIndex:10,
         background:`linear-gradient(to right,${DAB_GREEN},${DAB_GOLD},${DAB_SAFFRON},${DAB_GOLD},${DAB_GREEN})`,
@@ -2416,7 +2516,7 @@ function Slide11({ active }) {
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:10 }}>
           <div style={{ width:3, height:28, borderRadius:2,
             background:`linear-gradient(to bottom,${DAB_GOLD},rgba(240,180,41,0.1))` }}/>
-          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, letterSpacing:5,
+          <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, letterSpacing:5,
             color:DAB_GOLD, textTransform:"uppercase", fontWeight:600 }}>
             Slide 11 · Dabur · Case Study
           </span>
@@ -2427,8 +2527,7 @@ function Slide11({ active }) {
             <div style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"6px 18px",
               background:"rgba(45,138,45,0.14)", border:`1px solid ${DAB_EMERALD}44`,
               borderRadius:24, marginBottom:10 }}>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZvzfbc3Rj0T78YN8TrmafAOPBQYOol_bRw&s" alt="logo" style={{ width:52, height:26, objectFit:"contain", background:"rgba(255,255,255,0.92)", borderRadius:6, padding:"3px 6px" }}/>
-              <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                            <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                 color:DAB_GOLD, letterSpacing:2 }}>PROJECT LAKSHYA</span>
             </div>
             <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:42, fontWeight:900,
@@ -2448,9 +2547,9 @@ function Slide11({ active }) {
             background:"rgba(255,255,255,0.05)", border:`1px solid ${DAB_GOLD}33`,
             borderRadius:14, backdropFilter:"blur(8px)",
             opacity:phase>=2?1:0, transition:"opacity 0.6s ease 0.3s" }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:3,
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:3,
               textTransform:"uppercase", color:DAB_GOLD, marginBottom:5, fontWeight:600 }}>Objective</div>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15,
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5,
               color:"rgba(255,255,255,0.7)", lineHeight:1.5 }}>
               Improve supply chain efficiency across India's Tier-2 and rural distribution network
             </div>
@@ -2473,7 +2572,7 @@ function Slide11({ active }) {
 
         {/* LEFT — Action cards */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease" }}>Key Actions</div>
 
@@ -2504,15 +2603,15 @@ function Slide11({ active }) {
                 {/* Icon */}
                 <div style={{ width:44, height:44, borderRadius:11, flexShrink:0,
                   background:`${a.color}22`, border:`1.5px solid ${a.accent}55`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:24,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:25.5,
                   animation: isHov ? "floatCard 2s ease-in-out infinite" : "none" }}>{a.icon}</div>
 
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:3,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:3,
                     textTransform:"uppercase", color:a.accent, fontWeight:700, marginBottom:3 }}>{a.phase}</div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontWeight:700,
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21.5, fontWeight:700,
                     color:"#fff", marginBottom:4, lineHeight:1.2 }}>{a.title}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.5,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.5,
                     color:"rgba(255,255,255,0.55)", fontWeight:300 }}>{a.body}</div>
                 </div>
               </div>
@@ -2522,7 +2621,7 @@ function Slide11({ active }) {
 
         {/* RIGHT — KPI before/after transformation cards */}
         <div style={{ display:"flex", flexDirection:"column", gap:10, minHeight:0 }}>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:4,
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:4,
             textTransform:"uppercase", color:"rgba(255,255,255,0.3)", flexShrink:0,
             opacity:phase>=2?1:0, transition:"opacity 0.5s ease 0.1s" }}>Results — Before → After</div>
 
@@ -2548,9 +2647,9 @@ function Slide11({ active }) {
                 <div style={{ display:"flex", alignItems:"center", gap:10 }}>
                   <div style={{ width:36, height:36, borderRadius:9, flexShrink:0,
                     background:`${k.color}22`, border:`1.5px solid ${k.color}44`,
-                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:20,
+                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5,
                     animation: isH ? "floatCard 2.4s ease-in-out infinite" : "none" }}>{k.icon}</div>
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                     color:"rgba(255,255,255,0.85)" }}>{k.label}</div>
                 </div>
 
@@ -2559,20 +2658,20 @@ function Slide11({ active }) {
                   <div style={{ flex:1, textAlign:"center", padding:"6px 8px",
                     background:"rgba(255,255,255,0.04)", borderRadius:8,
                     border:"1px solid rgba(255,255,255,0.08)" }}>
-                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, color:"rgba(255,255,255,0.3)",
+                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, color:"rgba(255,255,255,0.3)",
                       letterSpacing:2, textTransform:"uppercase", marginBottom:2 }}>Before</div>
-                    <div style={{ fontFamily:"'Playfair Display',serif", fontSize:24, fontWeight:700,
+                    <div style={{ fontFamily:"'Playfair Display',serif", fontSize:25.5, fontWeight:700,
                       color:"rgba(255,255,255,0.4)" }}>{k.before}</div>
                   </div>
 
-                  <div style={{ fontSize:20, color:"rgba(255,255,255,0.3)", flexShrink:0 }}>→</div>
+                  <div style={{ fontSize:21.5, color:"rgba(255,255,255,0.3)", flexShrink:0 }}>→</div>
 
                   <div style={{ flex:1, textAlign:"center", padding:"6px 8px",
                     background:`${k.color}18`, borderRadius:8,
                     border:`1px solid ${k.color}44` }}>
-                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, color:k.color,
+                    <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, color:k.color,
                       letterSpacing:2, textTransform:"uppercase", marginBottom:2 }}>After</div>
-                    <div style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:900,
+                    <div style={{ fontFamily:"'Playfair Display',serif", fontSize:27.5, fontWeight:900,
                       color:k.color }}>{reveal ? k.after : "—"}</div>
                   </div>
                 </div>
@@ -2585,7 +2684,7 @@ function Slide11({ active }) {
                     transition:"width 1.2s cubic-bezier(.23,1,.32,1)" }}/>
                 </div>
 
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, color:k.color,
+                <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, color:k.color,
                   opacity:0.65, lineHeight:1.3 }}>{k.desc}</div>
               </div>
             );
@@ -2597,7 +2696,7 @@ function Slide11({ active }) {
       <div style={{ padding:"10px 72px 14px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=5?1:0, transition:"opacity 0.8s ease 0.3s" }}>
         <div style={{ flex:1, height:1, background:"rgba(255,255,255,0.07)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12,
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:13.5,
           color:`rgba(45,138,45,0.5)`, letterSpacing:3, textTransform:"uppercase" }}>
           Dabur India · Project Lakshya · Strategic Convergence
         </span>
@@ -2709,7 +2808,7 @@ function Slide12({ active }) {
             {[{name:"Dabur",c:"#2d7d46"},{name:"Marico",c:"#d0021b"},{name:"Reckitt",c:"#003087"},{name:"Nestlé",c:"#1b3a4b"}].map(b=>(
               <div key={b.name} style={{ padding:"5px 14px", background:"#fff",
                 border:`2px solid ${b.c}44`, borderRadius:20,
-                fontFamily:"'DM Sans',sans-serif", fontSize:12, fontWeight:700, color:b.c,
+                fontFamily:"'DM Sans',sans-serif", fontSize:13.5, fontWeight:700, color:b.c,
                 boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>{b.name}</div>
             ))}
           </div>
@@ -2753,7 +2852,7 @@ function Slide12({ active }) {
                 <div style={{ flexShrink:0 }}>
                   <div style={{ width:54, height:54, borderRadius:14,
                     background:`${ins.color}14`, border:`2px solid ${ins.color}33`,
-                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                    display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                     animation: isHov ? "floatCard 2.2s ease-in-out infinite" : "none",
                     transition:"box-shadow 0.3s ease",
                     boxShadow: isHov ? `0 8px 24px ${ins.accent}44` : "none",
@@ -2769,16 +2868,16 @@ function Slide12({ active }) {
                 <div style={{ flex:1, display:"flex", flexDirection:"column", gap:8 }}>
                   {/* Tag */}
                   <div style={{ display:"inline-flex", alignItems:"center", gap:8 }}>
-                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:3.5,
+                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:3.5,
                       textTransform:"uppercase", color:ins.accent, fontWeight:700 }}>{ins.tag}</span>
                   </div>
 
                   {/* Title */}
-                  <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700,
+                  <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:23.5, fontWeight:700,
                     color:"#1a1a1a", lineHeight:1.2, letterSpacing:-0.3, margin:0 }}>{ins.title}</h3>
 
                   {/* Sub-headline */}
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, fontWeight:600,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, fontWeight:600,
                     color:ins.accent, letterSpacing:0.3 }}>{ins.sub}</div>
 
                   {/* Divider */}
@@ -2786,7 +2885,7 @@ function Slide12({ active }) {
 
                   {/* Body */}
                   <p style={{
-                    fontFamily:"'DM Sans',sans-serif", fontSize:15, lineHeight:1.65,
+                    fontFamily:"'DM Sans',sans-serif", fontSize:16.5, lineHeight:1.65,
                     color:"#5a4f48", fontWeight:300, margin:0, flex:1,
                     opacity:phase>=4?1:0, transform:phase>=4?"translateY(0)":"translateY(8px)",
                     transition:`all 0.5s ease ${0.3+i*0.1}s`,
@@ -2894,7 +2993,7 @@ function Slide13({ active }) {
               letterSpacing:-1.5, lineHeight:1.08, color:"#1a1a1a" }}>
               The{" "}<ShimmerText>Integrative</ShimmerText>{" "}Manager
             </h1>
-            <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14, lineHeight:1.65,
+            <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15.5, lineHeight:1.65,
               color:"#6b6055", maxWidth:520, marginTop:10, fontWeight:300 }}>
               Four companies. One trajectory. Future FMCG leadership demands mastery across{" "}
               <strong style={{ color:"#3a3330", fontWeight:600 }}>strategy, sustainability, technology and people</strong>{" "}—
@@ -2911,7 +3010,7 @@ function Slide13({ active }) {
                 width:52, height:52, borderRadius:"50%",
                 background:"linear-gradient(135deg,#b4641e,#e76f51)",
                 display:"flex", alignItems:"center", justifyContent:"center",
-                fontSize:20, zIndex:2,
+                fontSize:21.5, zIndex:2,
                 boxShadow:"0 6px 24px rgba(180,100,30,0.4)",
                 animation:"glowPulse 3s ease-in-out infinite",
               }}>✦</div>
@@ -2930,8 +3029,8 @@ function Slide13({ active }) {
                     justifyContent:"center", gap:2,
                     animation:`floatCard ${2.2+i*0.3}s ease-in-out ${i*0.4}s infinite`,
                   }}>
-                    <span style={{ fontSize:18 }}>{fp.icon}</span>
-                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:10,
+                    <span style={{ fontSize:19.5 }}>{fp.icon}</span>
+                    <span style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11.5,
                       color:fp.color, fontWeight:700, letterSpacing:0.5,
                       textTransform:"uppercase" }}>{fp.label}</span>
                   </div>
@@ -2979,14 +3078,14 @@ function Slide13({ active }) {
                   <div style={{ display:"flex", alignItems:"center", gap:12 }}>
                     <div style={{ width:46, height:46, borderRadius:12,
                       background:`${c.color}14`, border:`2px solid ${c.color}33`,
-                      display:"flex", alignItems:"center", justifyContent:"center", fontSize:22,
+                      display:"flex", alignItems:"center", justifyContent:"center", fontSize:23.5,
                       animation: isHov ? "floatCard 2s ease-in-out infinite" : "none",
                       boxShadow: isHov ? `0 6px 20px ${c.accent}44` : "none",
                       flexShrink:0, transition:"box-shadow 0.3s ease" }}>{c.icon}</div>
                     <div>
-                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:3.5,
+                      <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:3.5,
                         textTransform:"uppercase", color:c.accent, fontWeight:700, marginBottom:2 }}>{c.label}</div>
-                      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontWeight:900,
+                      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21.5, fontWeight:900,
                         color:"#1a1a1a", lineHeight:1 }}>{c.name}</div>
                     </div>
                   </div>
@@ -2994,11 +3093,11 @@ function Slide13({ active }) {
                   <div style={{ height:1.5, background:`linear-gradient(to right,${c.accent}66,transparent)`, borderRadius:1 }}/>
 
                   {/* Trajectory statement */}
-                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700,
+                  <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700,
                     color:c.color, lineHeight:1.4 }}>{c.trait}</div>
 
                   <p style={{
-                    fontFamily:"'DM Sans',sans-serif", fontSize:16, lineHeight:1.6,
+                    fontFamily:"'DM Sans',sans-serif", fontSize:17.5, lineHeight:1.6,
                     color:"#6b6055", fontWeight:300, flex:1, margin:0,
                     opacity:phase>=4?1:0, transform:phase>=4?"translateY(0)":"translateY(8px)",
                     transition:`all 0.5s ease ${0.3+i*0.1}s`,
@@ -3033,7 +3132,7 @@ function Slide13({ active }) {
                 style={{ width:40, height:40, borderRadius:10,
                   background: pillarHov===i ? `${fp.color}22` : `${fp.color}12`,
                   border:`1.5px solid ${pillarHov===i ? fp.color+"66" : fp.color+"33"}`,
-                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:20,
+                  display:"flex", alignItems:"center", justifyContent:"center", fontSize:21.5,
                   transition:"all 0.25s ease", cursor:"default",
                   transform: pillarHov===i ? "scale(1.18)" : "scale(1)",
                 }}>{fp.icon}</div>
@@ -3043,11 +3142,11 @@ function Slide13({ active }) {
           <div style={{ width:2, height:44, background:"rgba(180,100,30,0.2)", borderRadius:1, flexShrink:0 }}/>
 
           <div style={{ flex:1 }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:4,
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:4,
               textTransform:"uppercase", color:"#b4641e", marginBottom:6, fontWeight:700 }}>
               Key Insight
             </div>
-            <p style={{ fontFamily:"'Playfair Display',serif", fontSize:16, fontStyle:"italic",
+            <p style={{ fontFamily:"'Playfair Display',serif", fontSize:17.5, fontStyle:"italic",
               color:"#1a1a1a", lineHeight:1.55, margin:0, fontWeight:400 }}>
               Future FMCG leaders must master{" "}
               <span style={{ fontWeight:700, color:"#b4641e" }}>strategy, sustainability, technology and people</span>
@@ -3058,9 +3157,9 @@ function Slide13({ active }) {
 
           {/* Systemic intelligence label */}
           <div style={{ flexShrink:0, textAlign:"right" }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:13, letterSpacing:3,
+            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:14.5, letterSpacing:3,
               textTransform:"uppercase", color:"#9e8e82", marginBottom:4 }}>Era of the</div>
-            <div style={{ fontFamily:"'Playfair Display',serif", fontSize:16, fontWeight:700,
+            <div style={{ fontFamily:"'Playfair Display',serif", fontSize:17.5, fontWeight:700,
               color:"#b4641e", lineHeight:1.1 }}>Integrative<br/>Manager</div>
           </div>
         </div>
@@ -3070,7 +3169,7 @@ function Slide13({ active }) {
       <div style={{ padding:"10px 72px 14px", display:"flex", alignItems:"center", gap:12, zIndex:2,
         opacity:phase>=6?1:0, transition:"opacity 0.8s ease 0.2s" }}>
         <div style={{ flex:1, height:1, background:"rgba(0,0,0,0.08)" }}/>
-        <span style={{ fontFamily:"'Courier New',monospace", fontSize:11, color:"#c0b0a4",
+        <span style={{ fontFamily:"'Courier New',monospace", fontSize:12.5, color:"#c0b0a4",
           letterSpacing:3, textTransform:"uppercase" }}>
           Strategic Convergence · Global FMCG · SDMIMD
         </span>
@@ -3101,9 +3200,9 @@ function Slide14({ active }) {
   }, [active]);
 
   const companies = [
-    { name:"Nestlé",  color:"#c9a84c", logo:"https://www.citypng.com/photo/26935/nestle-logo-black-image-png" },
+    { name:"Nestlé",  color:"#c9a84c", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJP3CUB-TxSeysL1z-Ux5t5GZSnQSj1QRFmA&s" },
     { name:"Marico",  color:"#ff6b6b", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcORqLcrh_3ZRjtYRiG6kWWqJp-pByc1o_mQ&s" },
-    { name:"Reckitt", color:"#4d9de0", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJVC7p_YaeT-MZRCT_cMaD7jubtHLeaNnjQ&s" },
+    { name:"Reckitt", color:"#4d9de0", logo:"https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Reckitt_logo.svg/1280px-Reckitt_logo.svg.png" },
     { name:"Dabur",   color:"#f0b429", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZvzfbc3Rj0T78YN8TrmafAOPBQYOol_bRw&s" },
   ];
 
@@ -3138,7 +3237,7 @@ function Slide14({ active }) {
 
         {/* Top label */}
         <div style={{
-          fontFamily:"'DM Sans',sans-serif", fontSize:12, letterSpacing:6,
+          fontFamily:"'DM Sans',sans-serif", fontSize:13.5, letterSpacing:6,
           textTransform:"uppercase", color:"rgba(201,168,76,0.7)", marginBottom:28,
           opacity:phase>=1?1:0, transform:phase>=1?"translateY(0)":"translateY(-16px)",
           transition:"all 0.8s cubic-bezier(.23,1,.32,1)",
@@ -3166,7 +3265,7 @@ function Slide14({ active }) {
 
         {/* Subtitle */}
         <p style={{
-          fontFamily:"'Playfair Display',serif", fontSize:20, fontStyle:"italic",
+          fontFamily:"'Playfair Display',serif", fontSize:21.5, fontStyle:"italic",
           color:"rgba(255,255,255,0.55)", lineHeight:1.6, maxWidth:560, marginBottom:52,
           opacity:phase>=3?1:0, transform:phase>=3?"translateY(0)":"translateY(12px)",
           transition:"all 0.8s cubic-bezier(.23,1,.32,1) 0.2s",
@@ -3198,7 +3297,7 @@ function Slide14({ active }) {
               transition:`all 0.7s cubic-bezier(.23,1,.32,1) ${0.35+i*0.1}s`,
             }}>
               <div style={{
-                width:90, height:48, borderRadius:10, overflow:"hidden",
+                width:140, height:70, borderRadius:10, overflow:"hidden",
                 background:"rgba(255,255,255,0.92)",
                 border:`1.5px solid ${c.color}44`,
                 display:"flex", alignItems:"center", justifyContent:"center",
@@ -3209,7 +3308,7 @@ function Slide14({ active }) {
                   style={{ width:"100%", height:"100%", objectFit:"contain" }}/>
               </div>
               <span style={{
-                fontFamily:"'DM Sans',sans-serif", fontSize:11, letterSpacing:3,
+                fontFamily:"'DM Sans',sans-serif", fontSize:12.5, letterSpacing:3,
                 textTransform:"uppercase", color:c.color, fontWeight:600,
               }}>{c.name}</span>
             </div>
@@ -3390,7 +3489,7 @@ export default function FMCGPresentation() {
             >
               <slide.Component active={isActive&&!overview}/>
               {overview&&(
-                <div style={{ position:"absolute", top:18, left:24, fontFamily:"'DM Sans',sans-serif", fontSize:32, fontWeight:700, color:slide.accentColor, background:"rgba(255,255,255,0.88)", padding:"5px 14px", borderRadius:9, backdropFilter:"blur(8px)" }}>
+                <div style={{ position:"absolute", top:18, left:24, fontFamily:"'DM Sans',sans-serif", fontSize:33.5, fontWeight:700, color:slide.accentColor, background:"rgba(255,255,255,0.88)", padding:"5px 14px", borderRadius:9, backdropFilter:"blur(8px)" }}>
                   {slide.label} — {slide.title}
                 </div>
               )}
@@ -3402,8 +3501,8 @@ export default function FMCGPresentation() {
       {/* ── TOP HUD ── */}
       <div style={{ position:"fixed", top:0, left:0, right:0, zIndex:100, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"16px 32px", background:`linear-gradient(to bottom,${canvasBg}f5,transparent)`, transition:"background 1.1s cubic-bezier(.23,1,.32,1)" }}>
         <div style={{ display:"flex", alignItems:"center", gap:12 }}>
-          <div style={{ width:38, height:38, borderRadius:10, background:`linear-gradient(135deg,${accent},#e76f51)`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:32, boxShadow:`0 4px 16px ${accent}44` }}>✦</div>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, fontWeight:700, color:isDark?"#fff":"#1a1a1a", letterSpacing:1, transition:"color 1s ease" }}>FMCG</div>
+          <div style={{ width:38, height:38, borderRadius:10, background:`linear-gradient(135deg,${accent},#e76f51)`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:33.5, boxShadow:`0 4px 16px ${accent}44` }}>✦</div>
+          <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16.5, fontWeight:700, color:isDark?"#fff":"#1a1a1a", letterSpacing:1, transition:"color 1s ease" }}>FMCG</div>
         </div>
 
         <div style={{ display:"flex", gap:10, alignItems:"center" }}>
@@ -3420,11 +3519,11 @@ export default function FMCGPresentation() {
 
       {/* ── BOTTOM NAV ── */}
       <div style={{ position:"fixed", bottom:0, left:0, right:0, zIndex:100, display:"flex", alignItems:"center", justifyContent:"center", gap:24, padding:"18px 32px", background:`linear-gradient(to top,${canvasBg}f5,transparent)`, transition:"background 1.1s cubic-bezier(.23,1,.32,1)" }}>
-        <button className="nav-btn" onClick={prev} disabled={current===0||transitioning} style={{ width:48, height:48, borderRadius:"50%", background:"rgba(255,255,255,0.88)", boxShadow:"0 2px 14px rgba(0,0,0,0.1)", fontSize:32, color:"#3a3330" }}>←</button>
-        <div style={{ fontFamily:"'Courier New',monospace", fontSize:16, color:isDark?"rgba(255,255,255,0.4)":"#9e8e82", letterSpacing:3, minWidth:64, textAlign:"center", transition:"color 1s ease" }}>
+        <button className="nav-btn" onClick={prev} disabled={current===0||transitioning} style={{ width:48, height:48, borderRadius:"50%", background:"rgba(255,255,255,0.88)", boxShadow:"0 2px 14px rgba(0,0,0,0.1)", fontSize:33.5, color:"#3a3330" }}>←</button>
+        <div style={{ fontFamily:"'Courier New',monospace", fontSize:17.5, color:isDark?"rgba(255,255,255,0.4)":"#9e8e82", letterSpacing:3, minWidth:64, textAlign:"center", transition:"color 1s ease" }}>
           {String(current+1).padStart(2,"0")} / {String(SLIDES.length).padStart(2,"0")}
         </div>
-        <button className="nav-btn" onClick={next} disabled={current===SLIDES.length-1||transitioning} style={{ width:48, height:48, borderRadius:"50%", background:current===SLIDES.length-1?"rgba(255,255,255,0.5)":accent, boxShadow:current===SLIDES.length-1?"none":`0 4px 18px ${accent}55`, fontSize:32, color:current===SLIDES.length-1?"#9e8e82":"#fff", fontWeight:700 }}>→</button>
+        <button className="nav-btn" onClick={next} disabled={current===SLIDES.length-1||transitioning} style={{ width:48, height:48, borderRadius:"50%", background:current===SLIDES.length-1?"rgba(255,255,255,0.5)":accent, boxShadow:current===SLIDES.length-1?"none":`0 4px 18px ${accent}55`, fontSize:33.5, color:current===SLIDES.length-1?"#9e8e82":"#fff", fontWeight:700 }}>→</button>
       </div>
 
 
